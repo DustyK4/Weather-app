@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="weather.css">
+
+</head>
+<body>
+<!-- seperating different sections using div tag -->
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name">
+            <button><img src="https://spng.pngfind.com/pngs/s/584-5841084_search-mobile-icon-png-download-search-icon-mobile.png"> </button>
+        </div>
+        <div class="weather"><p class="time"></p>
+            <img src="https://cdn-icons-png.flaticon.com/512/1146/1146856.png" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Gandhinagar</h2>
+            <h3>Current date and time</h3>
+            <span id="datetime"></span>
+            <div class="details">
+                <div class="col">
+                    <img src="https://static-00.iconduck.com/assets.00/humidity-icon-512x419-5m7ztixz.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                
+                </div>
+                <div class="col">
+                    <img src="https://cdn-icons-png.flaticon.com/512/54/54298.png">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="windpressure">wind pressure
+        <p class="wind pressure">Wind pressure</p>
+    </div>
+    <div class="card2">
+        <div id="weather-data"></div>
+        <div class="right">
+          <h1>Past Weather</h1>
+          <div id="week-container"></div>
+        </div>
+      </div>
+    </div>
+   
+    <script src="weather.js"></script>
+</body>
+<footer>
+    <p><marquee>(copyright © claim by Animesh Shrestha  2003, Studen ID: np03cs4a230168)</marquee></p>
+</footer>
+</html>
